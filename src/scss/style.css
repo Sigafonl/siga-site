@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,500;1,600&display=swap");
 /*
 These are abstract settings, helpers, or functions with no direct output
 (ex. font imports, global variables, colors, ect.)
@@ -18,7 +20,40 @@ body {
   padding: 0;
   height: 100%;
   color: #522323;
-  background: linear-gradient(180deg, #241042 13.02%, #0258B9 63.02%, #1FADF1 100%);
+  background: linear-gradient(180deg, #241042 10%, #1D2362 35%, #0258B9 65%, #1FADF1 100%);
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  cursor: default;
+  text-decoration: none !important;
+}
+
+.centeredText {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  vertical-align: middle;
+  padding: 0.5vw;
 }
 
 /*
