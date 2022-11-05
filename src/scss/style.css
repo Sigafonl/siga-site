@@ -1,0 +1,29 @@
+/*
+These are abstract settings, helpers, or functions with no direct output
+(ex. font imports, global variables, colors, ect.)
+*/
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #522323;
+  background: linear-gradient(180deg, #241042 13.02%, #0258B9 63.02%, #1FADF1 100%);
+}
+
+/*
+All styles with reuseable components
+*/
+/*
+All component imports that may have specific element styles and layout
+*//*# sourceMappingURL=style.css.map */
