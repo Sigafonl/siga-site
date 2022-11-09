@@ -1,7 +1,10 @@
 import React from 'react';
+import Desktop from './pages/Desktop';
 import "./scss/style.css";
 
 function App() {
+  const breakpoint = 620;
+
   return (
     <div className="App">
       <header className="App-header">
@@ -9,6 +12,8 @@ function App() {
       </header>
     </div>
   );
+
+  // return width < breakpoint ? <Mobile /> : <Desktop/>;
 }
 
 export default App;
