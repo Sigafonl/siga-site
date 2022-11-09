@@ -13,37 +13,27 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  color: #522323;
-  background: #fad4bf;
+  height: 100vh;
+  background: linear-gradient(180deg, #241042 10%, #1D2362 35%, #0258B9 65%, #1FADF1 100%);
 }
 
-* {
+h1, h2, h3, a, p, span {
   font-family: "Libre Caslon Text";
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 700;
-  line-height: 1.1;
-  margin-top: 0;
-}
-
-p {
+  font-weight: 400;
+  color: #FBE9EB;
   margin-top: 0;
 }
 
 a,
 a:visited,
 a:active {
-  cursor: default;
+  cursor: pointer;
   text-decoration: none !important;
 }
 
@@ -60,6 +50,29 @@ a:active {
 /*
 All styles with reuseable components
 */
+nav {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #FBE9EB;
+}
+
+nav > .nav-section {
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 1 rem;
+  border-left: 1px solid #FBE9EB;
+}
+
+#nav-logo {
+  flex-basis: 100%;
+}
+
+#nav-projects,
+#nav-about,
+#nav-contact {
+  flex-grow: 1;
+}
+
 /*
 All component imports that may have specific element styles and layout
 *//*# sourceMappingURL=style.css.map */

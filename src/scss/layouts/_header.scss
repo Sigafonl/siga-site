@@ -1,0 +1,26 @@
+@use "../abstracts/colors";
+
+//Use flex display for single dimensional layouts (ex. 1 column or 1 row of stuff)
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid colors.$white;
+}
+
+nav > .nav-section {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1 rem;
+    border-left: 1px solid colors.$white;
+}
+
+#nav-logo{
+    flex-basis: calc(100%/1);
+}
+
+#nav-projects,
+#nav-about,
+#nav-contact {
+    flex-grow: 1;
+}

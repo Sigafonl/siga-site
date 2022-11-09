@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Desktop = () => {
+export default function Desktop () {
     const [isScrolling, setIsScrolling] = useState(false);
     const [width, setWidth] = useState(window.innerWidth);
     const [height, setHeight] = useState(window.innerHeight);
@@ -29,8 +29,6 @@ const Desktop = () => {
     }, []);
 
     return (
-        console.log("Hello world")
+        {width, height}
     );
 }
-
-export default Desktop;
