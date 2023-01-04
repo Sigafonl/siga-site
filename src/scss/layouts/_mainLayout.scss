@@ -1,0 +1,17 @@
+@use "../abstracts/colors";
+
+main{
+    flex-grow: 1;
+}
+
+//Use a grid when there are many elements in the scene
+
+main > article{
+    display: grid;
+    height: 100%;
+}
+
+main > article > .article-section{
+    height: 100%;
+    border: 1px solid colors.$white;
+}

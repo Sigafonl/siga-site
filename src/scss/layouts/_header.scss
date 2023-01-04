@@ -2,6 +2,12 @@
 
 //Use flex display for single dimensional layouts (ex. 1 column or 1 row of stuff)
 
+#header{
+    position: sticky;
+    top: 0;
+    display: contents;
+}
+
 nav {
     display: flex;
     width: 100%;
@@ -13,10 +19,14 @@ nav > .nav-section {
     display: flex;
     gap: 1 rem;
     border-left: 1px solid colors.$white;
+    align-items: center;
+    justify-content: center;
 }
 
 #nav-logo{
     flex-basis: calc(100%/1);
+    justify-content: flex-start;
+    
 }
 
 #nav-projects,

@@ -1,23 +1,39 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import {HashLink as Link} from "react-router-hash-link"
 import { useEffect, useState } from "react";
 
 export default function Header(){
 
+    const [sticky, setSticky] = useState("");
+
+    useEffect(() => {
+        window.addEventListener("scroll", isSticky);
+        return () => {
+            window.removeEventListener("scroll", isSticky);
+        };
+    }, []);
+
+    const isSticky = () => {
+        const scrollTop = window.scrollY;
+        const stickyStatus = scrollTop >= 250 ? "is-sticky" : "";
+        setSticky(stickyStatus);
+        console.log(stickyStatus)
+    };
+
     return (
-        <header>
+        <header id='header'>
             <nav>
                 <div id='nav-logo' className='nav-section'>
-                    <NavLink to="/">LOGO</NavLink>
+                    <Link smooth to="#home">LOGO</Link>
                 </div>
                 <div id='nav-projects' className='nav-section'>
-                    <NavLink to="/projects">PROJECTS</NavLink>
+                    <Link smooth to="#projects">PROJECTS</Link>
                 </div>
                 <div id='nav-about' className='nav-section'>
-                    <NavLink to="/about">ABOUT</NavLink>
+                    <Link smooth to="#about">ABOUT</Link>
                 </div>
                 <div id='nav-contact' className='nav-section'>
-                    <NavLink to="/contact">CONTACT</NavLink>
+                    <Link smooth to="#contact">CONTACT</Link>
                 </div>
             </nav>
         </header>

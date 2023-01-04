@@ -5,13 +5,18 @@ import Header from '../components/Header';
 
 export default function Projects() {
     return (
-        <div>
-            <Header></Header>
-            <div>
-                <p>
-                    PROJECTS
-                </p>
-            </div>
+        <div className= 'projects-container' id='projects'>
+            <main>
+                <section>
+                    <h1> Let's find out </h1>
+                    <p> 🍛 🍛 </p>
+                </section>
+
+                <section>
+                    <h1> 🥺 </h1>
+                    <p> 💕 </p>
+                </section>
+            </main>
         </div>
     );
 }

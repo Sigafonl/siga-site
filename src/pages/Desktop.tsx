@@ -1,11 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import About from "./About";
+import Contact from "./Contact";
+import Projects from "./Projects";
 
 export default function Desktop () {
     const [isScrolling, setIsScrolling] = useState(false);
     const [width, setWidth] = useState(window.innerWidth);
     const [height, setHeight] = useState(window.innerHeight);
   
-
     useEffect(() => {
         const onScroll = () => {
           if (window.pageYOffset) {
@@ -29,6 +31,12 @@ export default function Desktop () {
     }, []);
 
     return (
-        {width, height}
+      <div className="desktop-container">
+        <Projects></Projects>
+        <About></About>
+        <Contact></Contact>
+      </div>
+      
+        // {width, height}
     );
 }

@@ -5,13 +5,13 @@ import Header from '../components/Header';
 
 export default function Contact() {
     return (
-        <div>
-            <Header></Header>
-            <div>
-                <p>
-                    CONTACT
-                </p> 
-            </div> 
+        <div className= 'contact-container' id='contact'>
+            <main>
+                <section>
+                    <h1> What if this doesn't work? </h1>
+                    <p> Testing scroll </p>
+                </section>
+            </main>
         </div>
     );
 }
