@@ -2,16 +2,14 @@
 
 //Use flex display for single dimensional layouts (ex. 1 column or 1 row of stuff)
 
-#header{
-    position: sticky;
-    top: 0;
-    display: contents;
-}
-
 nav {
     display: flex;
     width: 100%;
     border-bottom: 1px solid colors.$white;
+
+    position: sticky;
+    top: 0;
+    z-index: 10000;
 }
 
 nav > .nav-section {
